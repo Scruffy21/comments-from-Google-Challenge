@@ -224,12 +224,12 @@ textarea {
     grid-column: 2;
     grid-row: 5/6;
 }
-    #submit:hover {
+    #submit:hover:enabled {
         cursor: pointer;
         background-image: linear-gradient(to bottom, #27e627, #00b56d);
         outline: none;
     }
-    #submit:active {
+    #submit:active:enabled {
         background-image: linear-gradient(90deg, #27e627, #00b56d);
     }
 
@@ -285,7 +285,7 @@ a {
 
 #frm-cont {
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 40px auto;
     text-align: center;
 }
 
@@ -321,6 +321,21 @@ a {
     padding-top: 10px;
     
 }
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(68, 68, 123);
+    color: white;
+    padding: 10px;
+    border-top: 1px solid white;
+}
+
+footer a {
+    text-decoration: underline;
+    padding: 5px 0;
+}
+
 
 @media only screen and (max-width: 900px) {
     #commentsSection {
@@ -453,6 +468,10 @@ a {
 
     h2 {
         width: 40%;
+    }
+
+    footer div {
+        width: 50%;
     }
 }
 

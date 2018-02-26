@@ -1,4 +1,6 @@
 <?php 
+
+die("0;posting of comments is now disabled");
 require 'details.php';
 
 $ip = $_SERVER["REMOTE_ADDR"];
@@ -41,9 +43,9 @@ else {
     $photo = "uploads/recipient-badge.png";
 }
 
-$name = $_POST["name"];
-$comment = nl2br($_POST["comment"], false);
-$website = $_POST["website"];
+$name = htmlspecialchars($_POST["name"]);
+$comment = nl2br(htmlspecialchars($_POST["comment"]), false);
+$website = htmlspecialchars($_POST["website"]);
 
 
 $conn = new mysqli($servername, $username, $password, $dbName);
@@ -74,11 +76,11 @@ if ($stmt->execute()) {
         "time" => $time,
         "date" => $date
     );
-    echo json_encode($arr);
+    echo "1;" . json_encode($arr);
 }
 
 else {
-    echo mysqli_error($conn);
+    echo "0;" . mysqli_error($conn);
 }
 
 

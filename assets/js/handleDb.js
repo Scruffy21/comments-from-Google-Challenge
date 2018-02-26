@@ -1,8 +1,6 @@
 
 
 function sendData () {
-
-    console.log("in sendData function");
     const xmlhttp = new XMLHttpRequest();
     nick = nameInput.value;
     const comment = commentInput.value;
@@ -32,9 +30,15 @@ function sendData () {
         if (this.readyState == 4 && this.status == 200) {
             body.classList.remove("wait");
             submit.classList.remove("wait");
-            successMsg();
-            resetInputs();
-            prependCmnt(this.responseText);
+            const respArr = this.responseText.split(";");
+            if (respArr[0] === "1") {
+                successMsg();
+                resetInputs();
+                prependCmnt(respArr[1]);
+            }
+            else { 
+                console.log(respArr[1]);
+            }
         }
     }
 

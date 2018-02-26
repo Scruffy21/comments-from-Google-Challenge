@@ -79,7 +79,7 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
         <?php echo $commentsSection; ?>
     </section>
 
-    <h3>Post your comment</h3>
+    <h3>Posting of comments is now disabled!</h3>
     <div id="frm-cont">
         <a href="#" id="top" class="slider visible">
             <i class="arrow ar-up"></i> <span>back to top</span>
@@ -88,8 +88,6 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
             <div id="preview-cont"><label for="photoInput" id="photoPreview">
                 <i class="far fa-file-image"></i></label>
             </div>
-                
-            <!-- <label for="photoInput" id="photoPreview"><span>Upload image here (Optional)</span><img src="pokemon.jpg" width="100px"height="100px"></label> -->
             <label for="photoInput" id="photoLabel"><div>Choose image (optional)</div></label>
             <input type="file" id="photoInput" accept="image/*">
             <div id="nameInp-cont" class="inp-row">
@@ -111,7 +109,16 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
         <div>Post your comment</div>
     </a>
 
-
+    <footer>
+        <div>
+        <p>Website made by: </p>
+        <p><a href="#" rel="author">Bartek Burkot</a></p>
+        </div>
+        <div>
+        <p>Comments by: </p>
+        <p><a href="https://www.udacity.com/google-scholarships">Google Developer Challenge Scholarship</a> recipients</p>
+        </div>
+    </footer>
 
 
 </body>

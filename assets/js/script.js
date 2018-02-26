@@ -1,5 +1,6 @@
 
-window.onload = function() {
+window.onload = function () {
+    document.querySelector("#submit").disabled = true; // posting of comments is now disabled
     const photoInput = document.getElementById("photoInput");
     photoInput.addEventListener("change", readURL); //event listener for a file upload
     const photoPreview = document.getElementById("photoPreview");
@@ -16,6 +17,14 @@ window.onload = function() {
         openForm.style.display = "block";
         
     });
+    window.addEventListener("scroll", throttle(function () {
+        const doc = document.documentElement;
+        const offset = doc.scrollTop + window.innerHeight;
+        const height = doc.offsetHeight;
+        if (offset === height) {
+            openForm.style.display = "none";
+        }
+    }, 50));
 }
 
 function readURL() {
@@ -47,3 +56,27 @@ function errShow(elem) {
     }, 1000)
 }
 
+
+// throttle implementation from:
+// https://medium.com/@_jh3y/throttling-and-debouncing-in-javascript-b01cad5c8edf
+
+const throttle = (func, limit) => {
+    let lastFunc
+    let lastRan
+    return function() {
+      const context = this
+      const args = arguments
+      if (!lastRan) {
+        func.apply(context, args)
+        lastRan = Date.now()
+      } else {
+        clearTimeout(lastFunc)
+        lastFunc = setTimeout(function() {
+          if ((Date.now() - lastRan) >= limit) {
+            func.apply(context, args)
+            lastRan = Date.now()
+          }
+        }, limit - (Date.now() - lastRan))
+      }
+    }
+}
