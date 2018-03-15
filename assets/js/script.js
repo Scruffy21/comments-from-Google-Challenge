@@ -17,8 +17,9 @@ window.onload = function () {
         openForm.style.display = "block";
         
     });
+    const doc = document.documentElement;
     window.addEventListener("scroll", throttle(function () {
-        const doc = document.documentElement;
+
         const offset = doc.scrollTop + window.innerHeight;
         const height = doc.offsetHeight;
         if (offset === height) {

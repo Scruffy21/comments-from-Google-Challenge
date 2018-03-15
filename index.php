@@ -57,8 +57,8 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto|Open+Sans" rel="stylesheet">
+    <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto|Open+Sans" rel="stylesheet"> -->
     <link href="assets/css/styles.css" rel="stylesheet" >
     <script src="assets/js/handleDb.js"></script>
     <script src="assets/js/script.js"></script>
@@ -111,12 +111,15 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
 
     <footer>
         <div>
-        <p>Website made by: </p>
-        <p><a href="#" rel="author">Bartek Burkot</a></p>
+            <p>Code on <a href="https://github.com/Scruffy21/comments-from-Google-Challenge" class="source" target="_blank">Github</a></P>
         </div>
         <div>
-        <p>Comments by: </p>
-        <p><a href="https://www.udacity.com/google-scholarships">Google Developer Challenge Scholarship</a> recipients</p>
+            <p>Website made by: </p>
+            <p><a href="http://responsible-developer.com/" rel="author" class="author" target="_blank">Bartek Burkot</a></p>
+        </div>
+        <div>
+            <p>Comments by: </p>
+            <p><a href="https://www.udacity.com/google-scholarships" class="recipients" target="_blank">Google Developer Challenge Scholarship</a> recipients</p>
         </div>
     </footer>
 

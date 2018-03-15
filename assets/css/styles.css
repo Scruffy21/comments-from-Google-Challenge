@@ -331,9 +331,16 @@ footer {
     border-top: 1px solid white;
 }
 
+footer > div {
+    max-width: 25vw;
+}
+
 footer a {
-    text-decoration: underline;
     padding: 5px 0;
+}
+
+footer a:hover {
+    color: #ffff59;
 }
 
 
@@ -468,10 +475,6 @@ footer a {
 
     h2 {
         width: 40%;
-    }
-
-    footer div {
-        width: 50%;
     }
 }
 
