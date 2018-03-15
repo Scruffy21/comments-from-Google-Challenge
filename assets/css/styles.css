@@ -143,6 +143,7 @@ header {
     background-color: rgb(240, 240, 240);
 }
 
+/* turns out you can't easily position the label in IE, so just leaving it like this */
 #photoLabel {
     -ms-grid-column: 1;
     -ms-grid-column-span: 1;
