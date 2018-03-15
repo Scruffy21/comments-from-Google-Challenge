@@ -99,7 +99,7 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
                 <input type="url" id="urlInput" placeholder="Address of your website (optional)" title="Link will be attached to your name">
             </div>
             <textarea id="commentInput" placeholder="Write your comment here... (required)"></textarea>
-            <button type="button" id="submit">POST<i class="fas fa-paper-plane"></i></button>
+            <button type="button" id="submit" disabled>POST<i class="fas fa-paper-plane"></i></button>
         </section>
     </div>
     <div id="cmntPosted" class="success-modal">Comment posted!</div>

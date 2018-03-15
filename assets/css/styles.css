@@ -138,18 +138,18 @@ header {
     border: 1px solid black;
     -ms-grid-columns: 130px 1fr;
         grid-template-columns: 130px 1fr;
-    -ms-grid-rows: 1fr 1fr 5fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 100px 1fr 1fr;
         grid-template-rows: 1fr 1fr 5fr 1fr 1fr;
     background-color: rgb(240, 240, 240);
 }
 
 /* turns out you can't easily position the label in IE, so just leaving it like this */
 #photoLabel {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
+    /* -ms-grid-column: 1;
+    -ms-grid-column-span: 1; */
     grid-column: 1;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 2;
+    /* -ms-grid-row: 3;
+    -ms-grid-row-span: 2; */
     grid-row: 4/6;
     text-align: center;
 }
@@ -219,7 +219,7 @@ header {
     }
 
 #preview-cont {
-    -ms-grid-row: 1;
+    -ms-grid-row: 2;
     -ms-grid-row-span: 3;
     grid-row: 1/4;
 }
