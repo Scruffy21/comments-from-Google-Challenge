@@ -145,8 +145,9 @@ header {
 
 #photoLabel {
     -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
     grid-column: 1;
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-row-span: 2;
     grid-row: 4/6;
     text-align: center;
@@ -179,10 +180,12 @@ header {
 }
 
 #nameInp-cont {
-
+    -ms-grid-column: 2;
 }
-#urlInp-cont {
 
+#urlInp-cont {
+    -ms-grid-column: 2;
+    -ms-grid-row: 2;
 }
 
 
