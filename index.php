@@ -57,7 +57,7 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
 <html>
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> -->
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto|Open+Sans" rel="stylesheet"> -->
     <link href="assets/css/styles.css" rel="stylesheet" >
     <script src="assets/js/handleDb.js"></script>
