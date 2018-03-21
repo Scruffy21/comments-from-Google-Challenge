@@ -115,7 +115,7 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
         </div>
         <div>
             <p>Website made by: </p>
-            <p><a href="http://responsible-developer.com/" rel="author" class="author" target="_blank">Bartek Burkot</a></p>
+            <p><a href="https://responsible-developer.com/" rel="author" class="author" target="_blank">Bartek Burkot</a></p>
         </div>
         <div>
             <p>Comments by: </p>
