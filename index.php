@@ -33,7 +33,7 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
     $result =
         "<div class='cmnt'>
     
-    <div class='cmnt-info'><img src='assets/flags/{$flag}.png' class='flag' title='{$country}'>
+    <div class='cmnt-info'><img src='assets/flags/{$flag}.png' alt='{$country} flag' class='flag' title='{$country}'>
         <span class='user-name'>";
 
     if ($website == "") {
@@ -46,7 +46,7 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
                               
         <span class='datetime'><span class='time'>{$time}</span><span class='date'>{$date}</span></span>    
     </div>
-    <div class='user-cmnt'><img src={$photo} class='user-img'>{$comment}</div>
+    <div class='user-cmnt'><img src={$photo} alt='Poster image' class='user-img'>{$comment}</div>
     </div>";
     
     return $result;
@@ -58,20 +58,20 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro|Roboto" rel="stylesheet">
     <link href="assets/css/styles.css" rel="stylesheet" >
-    <script src="assets/js/handleDb.js"></script>
-    <script src="assets/js/script.js"></script>
-    <title>Farewell to Phase 1</title>
+
+    <title>Farewell | Google Challenge Scholarship</title>
+    <meta name="description" content="Place where the recipients of Google Developer Challenge Scholarship 2017/2018 could post their comments about the first Phase of the course. Made as a thank you to Google and Udacity for the opportunity we've been given, and also to have something to remember this course and community by and show how many people from different countries were affected by it.">
 </head>
 
 <body>
     <header>
         <h1><a href="https://www.udacity.com/google-scholarships" target="_blank">Google FEND Challenge Scholarship 2017/2018</a></h1>
         <div id="logo-cont">
-            <a href="https://www.google.com" target="_blank"><img src="assets/logos/Google-svg-logo.svg" class="logo"></a>
+            <a href="https://www.google.com" target="_blank"><img src="assets/logos/Google-svg-logo.svg" alt="Google logo" class="logo"></a>
             <h2>Goodbye to Phase One</h2>
-            <a href="https://www.udacity.com" target="_blank"><img src="assets/logos/udacity-svg-white-logo.svg" class="logo"></a>
+            <a href="https://www.udacity.com" target="_blank"><img src="assets/logos/udacity-svg-white-logo.svg" alt="Udacity logo" class="logo"></a>
         </div>
     </header>
 
@@ -123,7 +123,8 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
         </div>
     </footer>
 
-
+    <script src="assets/js/handleDb.js"></script>
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
