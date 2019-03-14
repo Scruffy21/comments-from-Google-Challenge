@@ -110,7 +110,7 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
         <div>Post your comment</div>
     </a>
 
-    <footer>
+    <footer> 
         <div>
             <p>Code on <a href="https://github.com/Scruffy21/comments-from-Google-Challenge" class="source" target="_blank">Github</a></P>
         </div>
