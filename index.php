@@ -115,10 +115,6 @@ function fillData($name, $website, $comment, $photo, $flag, $country, $time, $da
             <p>Code on <a href="https://github.com/Scruffy21/comments-from-Google-Challenge" class="source" target="_blank">Github</a></P>
         </div>
         <div>
-            <p>Website made by: </p>
-            <p><a href="https://responsible-developer.com/" rel="author" class="author" target="_blank">Bartek Burkot</a></p>
-        </div>
-        <div>
             <p>Comments by: </p>
             <p><a href="https://www.udacity.com/google-scholarships" class="recipients" target="_blank">Google Developer Challenge Scholarship</a> recipients</p>
         </div>
